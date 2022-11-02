@@ -1,0 +1,85 @@
+@media (max-width: 1200px) {
+    main {
+        flex-direction: column;
+        height: auto;
+        padding: 5px;
+    }
+
+    .container {
+        width: 90%;
+        height: 400px;
+       
+    }
+
+    #form_imc {
+        width: 50%;
+
+
+    }
+
+    #btn_clear {
+        margin-top: 3px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    main {
+        height: auto;
+        padding: 5px;
+        
+    }
+
+    .container {
+        width: 100%;
+        height: auto;
+
+
+    }
+
+    #form_imc {
+        width: 100%;
+    }
+    
+
+    #table {
+        width: 100%;
+        font-size: xx-small;
+    }
+
+    #titulo_table {
+        font-size: x-small;
+    }
+
+    td,
+    tr,
+    th {
+        font-size: x-small;
+    }
+
+    #pesoIdeal {
+        width: 100px;
+        height: 50px;
+        font-size: x-small;
+    }
+}
+
+@media (max-width: 306px) {
+   
+    main{
+        height: auto;
+    }
+    .container{
+        height: 400px;
+    }
+    #form_imc section input {
+        width: 90%;
+
+    }
+    #form_imc section button{
+        width: 120px;
+        font-size: x-small;
+        margin-bottom: 5px;
+    }
+}

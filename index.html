@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Klebson Antunes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imc</title>
+    <!--Arquivo css-->
+    <link rel="stylesheet" href="/css/style.css">
+    <!--media queries-->
+    <link rel="stylesheet" href="/css/media_Queries.css">
+    <!--Fonts google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Asap:wght@700&family=Josefin+Sans&family=Montserrat&family=Orbitron:wght@900&display=swap"
+        rel="stylesheet">
+        <!---Arquivo JavaScript-->
+        <script src="/js/script.js" defer></script>
+</head>
+
+<body>
+    <!--Cabeçalho com Titulo-->
+    <header id="header">
+        <h1>Calcular IMC</h1>
+    </header>
+    <!--Conteudo do programa-->
+    <main>
+        <!--Seção com Fromulario-->
+        <section class="container">
+            <form action="" id="form_imc">
+                <!--area campo de altura-->
+                <section id="section_altura">
+                    <label for="altura">Altura(ex.: 1,70)</label>
+                    <input type="number" id="altura" name="altura" placeholder="Metros" step="0.01" min="0" max="3.00">
+                </section>
+                <!--area campo peso-->
+                <section id="section_peso">
+                    <label for="peso">Peso(ex.: 69,2)</label>
+                    <input type="number" id="peso" name="peso" placeholder="Quilos" step="0.1">
+                </section>
+                <!--area botoes-->
+                <section id="botoes">
+                    <button id="btn_calc" type="submit">Calcular </button>
+                    <button id="btn_clear" type="reset">Limpar</button>
+                </section>
+            </form>
+        </section>
+        <!--Seção com tabela-->
+        <section id="container_table" class="container">
+            <!--Tabela com Interpretação do imc-->
+            <table>
+                <thead>
+                    <tr>
+                        <td colspan="3" id="titulo_table">
+                            <h3> VEJA A INTERPRETAÇÃO DO IMC</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>IMC</th>
+                        <th>CLASSIFICAÇÃO</th>
+                        <th>OBESIDADE(grau)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="magreza">
+                        <td>MENOR QUE 18,5</td>
+                        <td>MAGREZA</td>
+                        <td>0</td>
+                    </tr>
+                    <tr id="normal">
+                        <td>ENTRE 18,5 E 24,9</td>
+                        <td>NORMAL</td>
+                        <td>0</td>
+                    </tr>
+                    <tr id="sobrepeso">
+                        <td>ENTRE 25,0 E 29,9</td>
+                        <td>SOBREPESO</td>
+                        <td>I</td>
+                    </tr>
+                    <tr id="obesidade">
+                        <td>ENTRE 30,0 E 39,9</td>
+                        <td>OBESIDADE</td>
+                        <td>II</td>
+                    </tr>
+                    <tr id="obsidadegrave">
+                        <td>MAIOR QUE 40,0</td>
+                        <td>OBESIDADE GRAVE</td>
+                        <td>III</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--Area Resultado-->
+            <div id="result_imc">
+                <h4>SEU IMC: <span id="resposta"></span></h4>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
